@@ -6,7 +6,7 @@ it('shortenText should not alter a string with less than 100 characters', () => 
     expect(shortenText(shortText)).toHaveLength(29);
 })
 
-it('shortenText should cut off extra characters after 100 and add threee periods', () => {
+it('shortenText should cut off extra characters after 100 and add three periods', () => {
     const shortened = shortenText(longText)
     expect(shortened).not.toHaveLength(longText.length);
     expect(shortened.slice(-3)).toBe('...');
